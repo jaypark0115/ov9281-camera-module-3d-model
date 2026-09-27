@@ -4,18 +4,14 @@
 
 A real-size mechanical reference model of the OV9281 camera module used in a four-camera motion-capture system. The model was created to support enclosure design, cage mounting, component-clearance checks, and ribbon-cable routing before working with the physical camera.
 
-## Project status
+## Documentation
 
-This repository currently documents the model through rendered views and physical size-check photographs. The editable CAD source, neutral STEP export, printable STL files, and measured dimension sheet will be added after the design data is prepared for release.
+This repository documents the reference model through rendered views and physical size-check photographs.
 
-| Item | Status | Planned location |
-| --- | --- | --- |
-| Rendered reference views | Available | `docs/images/` |
-| Physical model comparisons | Available | `docs/images/` |
-| Editable CAD source | Coming later | `cad/source/` |
-| STEP exchange model | Coming later | `cad/step/` |
-| STL reference model | Coming later | `models/stl/` |
-| Dimension drawing and measurement notes | Coming later | `dimensions/` |
+| Documentation | Location |
+| --- | --- |
+| Rendered reference views | `docs/images/` |
+| Physical model comparisons | `docs/images/` |
 
 ## Why this model was made
 
@@ -55,11 +51,11 @@ The printed reference was placed next to the actual camera module to compare the
 
 ![Physical side comparison](docs/images/07-side-size-check.jpg)
 
-These photographs document the visual fit-check stage. Exact dimensions and tolerances are intentionally not published yet; they will be included with the dimension sheet after the source data is reviewed.
+These photographs document front, rear, and side fit checks against the physical camera module.
 
 ## Intended use
 
-Once the model files are released, this repository is intended to help with:
+The reference model supports:
 
 - camera enclosure and cover design;
 - mounting-bracket and cage-interface design;
@@ -67,7 +63,7 @@ Once the model files are released, this repository is intended to help with:
 - ribbon-cable exit and bend-space planning;
 - early fit checks before installing the real camera.
 
-Verify the released model against your own module before fabrication. Camera-module revisions, lens assemblies, and cable configurations may differ.
+Verify dimensions against your own module before fabrication. Camera-module revisions, lens assemblies, and cable configurations may differ.
 
 ## Repository layout
 
@@ -75,13 +71,13 @@ Verify the released model against your own module before fabrication. Camera-mod
 .
 |-- README.md
 |-- cad/
-|   |-- source/       # Editable CAD source, to be released
-|   `-- step/         # Neutral STEP export, to be released
-|-- dimensions/       # Dimension drawing and measurement notes, to be released
+|   |-- source/       # Editable CAD source area
+|   `-- step/         # Neutral STEP exchange area
+|-- dimensions/       # Dimension drawings and measurement notes
 |-- docs/
 |   `-- images/       # Renders and physical comparison photographs
 `-- models/
-    `-- stl/          # Printable reference model, to be released
+    `-- stl/          # Printable reference model area
 ```
 
 ## Related project
@@ -90,8 +86,3 @@ The model was developed while extending a four-camera motion-capture system from
 
 - [Four-Camera Motion-Capture System — Second Implementation](https://jaypark0115.github.io/jay-tech-notes/pages/planned/03-mocap-second-implementation.html)
 - [Jay Tech Notes](https://jaypark0115.github.io/jay-tech-notes/)
-
-## Release notes
-
-There is no downloadable CAD geometry in the current documentation-only release. Future releases will identify the available formats, source-software version, units, revision, and any known dimensional limitations alongside the model files.
-
