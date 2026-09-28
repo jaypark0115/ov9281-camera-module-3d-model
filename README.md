@@ -13,6 +13,15 @@ This repository documents the reference model through rendered views and physica
 | Rendered reference views | `docs/images/` |
 | Physical model comparisons | `docs/images/` |
 
+## Model downloads
+
+| Format | File | Use |
+| --- | --- | --- |
+| FreeCAD | [`cad/source/ov9281-camera-module.FCStd`](cad/source/ov9281-camera-module.FCStd) | Editable, colored, component-grouped source model |
+| STL | [`models/stl/ov9281-camera-module.stl`](models/stl/ov9281-camera-module.stl) | Single closed solid for printing and fit checks |
+
+Both files use millimetres and the same coordinate system. The PCB center is the XY origin, the PCB rear surface is Z=0, and the lens points in +Z.
+
 ## Why this model was made
 
 The camera module is part of an indoor drone motion-capture system built around four OV9281 cameras and a Jetson computer. A camera mount cannot be designed from the PCB outline alone: the lens barrel, rear-side components, mounting holes, and ribbon-cable exit all affect the enclosure and the final camera orientation.
@@ -64,6 +73,13 @@ The reference model supports:
 - early fit checks before installing the real camera.
 
 Verify dimensions against your own module before fabrication. Camera-module revisions, lens assemblies, and cable configurations may differ.
+
+### Reference-model notes
+
+- The small non-mounting PCB holes visible in the photographs are intentionally filled in the printable model to avoid fragile print features.
+- The 22-contact, 0.50 mm-pitch ribbon-cable envelope extends 20 mm from the rear connector. Its 0.80 mm model thickness is reinforced for printing and is not the physical cable thickness.
+- The M12 mount's two screw ears and square base use the same 3.87 mm thickness.
+- The model is intended for enclosure clearance and physical fit checks. It is not manufacturer-certified production CAD.
 
 ## Repository layout
 
